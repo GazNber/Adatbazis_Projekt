@@ -1,0 +1,357 @@
+/* Alap */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--ff-logo: ;
+	--ff-logo-mobile: ;
+	--ff-body: 'Poppins', sans-serif;
+
+	--clr-input: white;
+	--clr-nav: white;
+	--clr-logo: black;
+	--clr-button: white;
+	--clr-button-hover: #00131a;
+	--clr-button-text: black;
+	--clr-button-text-hover: white;
+	--crt-main: white;
+	--crl-form: rgb(175, 175, 175);
+
+}
+
+body {
+	background-color: WhiteSmoke;
+    font-family: var(--ff-body);
+}
+
+
+/* Navbar */
+nav {
+	padding: 0 2rem;
+	height: 8vh;
+	background-color: var(--clr-nav);
+	display: flex;
+	position: relative;
+}
+
+nav #logo-container {
+	flex: 1 1 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav #logo-container .logo {
+	font-size: 2.5rem;
+	/*font-family:'Times New Roman', Times, serif;*/
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	letter-spacing: -0.1rem;
+	color: var(--clr-logo);
+	
+}
+
+nav a {
+	text-decoration: none;
+}
+
+/* search */
+nav #nav-kozep {
+	flex: 1 1 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+nav #nav-kozep #search-container {
+	display: flex;
+	align-items: center;
+	height: 5vh;
+	width: 60%;
+	border-radius: 0.3rem;
+
+	background-color: var(--clr-input);
+	overflow: hidden;/*ezt mindig a szülő kapja*/
+	border: 2px black solid;
+}
+
+nav #nav-kozep #search-container #searchbar {
+	flex: 1 1 90%;
+	height: 100%;
+	padding-left: 0.5rem;
+	border: var(--clr-input);
+}
+
+nav #nav-kozep #search-container #searchbar:active > #search-container{
+	border: 2px red solid;
+
+}
+
+nav #nav-kozep #search-container button {
+	flex: 1 1 10%;
+	height: 100%;
+	background-color: var(--clr-input);
+	border: none;
+	cursor: pointer;
+}
+
+nav #nav-kozep #search-container button:active {
+	filter: brightness(95%);
+}
+
+nav #nav-kozep #search-container button img {
+	background-color: var(--clr-input);
+}
+
+nav .nav-jobb {
+	flex: 1 1 20%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .nav-jobb a {
+	color: black;
+	text-decoration: none;
+}
+
+/* Csatlakozz Gomb */
+nav .nav-jobb .signin {
+	border: 2px solid black;
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+	background-color: var(--clr-button);
+	color: var(--clr-buton-text);
+}
+
+nav .nav-jobb .signin:hover {
+	background-color: var(--clr-button-hover);
+	color: var(--clr-button-text-hover);
+}
+
+nav .nav-jobb .signin:active {
+	filter: brightness(90%);
+}
+
+nav .nav-jobb #profile-pic-nav {
+	border-radius: 50%;
+	height: 3rem;
+	width: 3rem;
+	cursor: pointer;
+}
+
+/* Nav drowdown */
+nav .nav-jobb .sub-menu-container {
+	position: absolute;
+	top: 100%;
+	right: 2rem;
+	width: 20rem;
+
+	max-height: 0rem;
+	overflow: hidden;
+	transition: max-height 0.1s;
+}
+
+nav .nav-jobb .sub-menu-container.open-menu {
+	max-height: 50rem;
+	transition: max-height 0.1s;
+}
+
+nav .nav-jobb .sub-menu-container .sub-menu {
+	background-color: white;
+	padding: 1rem 0;
+	display: flex;
+	flex-direction: column;
+}
+
+nav .nav-jobb .sub-menu-container .sub-menu .user-info {
+	display: flex;
+	align-items: center;
+}
+
+nav .nav-jobb .sub-menu-container .pic-container {
+	flex: 1 1 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav .nav-jobb .sub-menu-container #profile-pic-menu {
+	border-radius: 50%;
+	height: 4rem;
+	width: 4rem;
+	cursor: move;
+}
+
+nav .nav-jobb .sub-menu-container h3 {
+	flex: 1 1 60%;
+}
+
+nav .nav-jobb .sub-menu-container .sub-menu hr {
+	border: 0;
+	height: 1px;
+	width: 100%;
+	background-color: black;
+	margin: 1rem 0 0.7rem;
+}
+
+nav .nav-jobb .sub-menu-container .sub-menu .sub-menu-link {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 0.7rem 0;
+}
+
+nav .nav-jobb .sub-menu-container .sub-menu .sub-menu-link img {
+	height: 30px;
+	flex: 1 1 20%;
+}
+
+nav .nav-jobb .sub-menu-container .sub-menu .sub-menu-link p {
+	flex: 1 1 80%;
+}
+
+nav .nav-jobb .sub-menu-container .sub-menu .sub-menu-link:hover {
+	background-color: whitesmoke;
+}
+
+/* From */
+.wrapper {
+	height: 92vh;
+}
+input {
+	appearance: none;
+	border-radius: 0;
+}
+.card {
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 425px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px 0 rgba(153, 153, 153, .25);
+	padding: 0.75rem;
+}
+form {
+	padding: 1rem;
+}
+.input {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+}
+.input + .input {
+	margin-top: 1.5rem;
+}
+.input-label {
+	color: #8597a3;
+	position: absolute;
+	top: 1.5rem;
+	transition: 0.25s ease-out;
+}
+.input-field {
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee;
+	font: inherit;
+	font-size: 1.125rem;
+	padding: 0.25rem 0;
+}
+.input-field:focus, .input-field:valid {
+	outline: 0;
+	border-bottom-color: #6658d3;
+}
+.input-field:focus + .input-label, .input-field:valid + .input-label {
+	color: #6658d3;
+	transform: translateY(-1.5rem);
+}
+.action {
+	margin-top: 2rem;
+}
+.action-button {
+	font: inherit;
+	font-size: 1.25rem;
+	padding: 1em;
+	width: 100%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+.action-button:focus {
+	outline: 0;
+}
+.action-button:active {
+	filter: brightness(85%);
+}
+.card-info {
+	padding: 1rem 1rem;
+	text-align: center;
+	font-size: 0.875rem;
+	color: #8597a3;
+}
+.card-info a {
+	display: block;
+	color: #6658d3;
+	text-decoration: none;
+}
+
+/* File input */
+form .form-group {
+	max-width: 500px;
+	margin: auto;
+	margin-bottom: 30px;
+	padding-top: 1.5rem;
+}
+.file-area {
+	width: 100%;
+	position: relative;
+}
+.file-area input[type=file] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+.file-area .file-dummy {
+	width: 100%;
+	padding: 30px;
+	background: rgb(234, 234, 234);
+	border: 2px dashed rgb(185, 185, 185);
+	text-align: center;
+	transition: background 0.3s ease-in-out;
+}
+.file-area .file-dummy .success {
+	display: none;
+}
+.file-area:hover .file-dummy {
+	background: rgba(255, 255, 255, 0.1);
+}
+.file-area input[type=file]:focus + .file-dummy {
+	outline: 2px solid rgba(255, 255, 255, 0.5);
+	outline: -webkit-focus-ring-color auto 5px;
+}
+.file-area input[type=file]:valid + .file-dummy {
+	border-color: rgba(0, 255, 0, 0.4);
+	background-color: rgba(0, 255, 0, 0.3);
+}
+.file-area input[type=file]:valid + .file-dummy .success {
+	display: inline-block;
+}
+.file-area input[type=file]:valid + .file-dummy .default, .file-dummy .invalid{
+	display: none;
+}
