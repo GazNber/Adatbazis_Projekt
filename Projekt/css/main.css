@@ -6,7 +6,6 @@ main {
 main > * {
     min-height: 40rem;
     width: 100%;
-    background-color: aquamarine;
     margin: 0.5rem;
 }
 
@@ -16,7 +15,6 @@ main #sidebar {
 
 main #main {
     flex: 1 1 75%;
-    background-color: aqua;
 }
 
 main #side-content {
@@ -77,16 +75,57 @@ main #side-content {
 }
 
 /* kártya */
-.main .kartya {
-    border: 5px solid black;
-    width: 20rem;
+#main {
+
 }
 
-.thumbnail {
-    width: 20rem;
+#main .kartya {
+    border: 1px solid #001a00;
 }
 
-.csilag {
+#main .kartya .thumbnail {
+    /*
+    width: 100%;
+    height: 100%;*/
+}
+
+#main .kartya .product-information {
+    padding: 0.5rem;
+}
+
+#main .kartya .product-information .name-and-pic {
+    display: flex;
+    align-items: center;
+
+}
+#main .kartya .product-information .name-and-pic img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+#main .kartya .product-information .seller-name {
+    margin-left: 0.5rem;
+}
+
+#main .kartya .product-information .kartya-cim {
+    font-size: 1.2rem;
+}
+
+#main .kartya .line {
+    
+}
+
+#main .kartya .statistics {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+#main .kartya .statistics .bal {
+    display: flex;
+    align-items: center;
+}
+#main .kartya .statistics .bal .csillag {
     width: 24px;
     height: 24px;
+    margin-right: 0.5rem;
 }

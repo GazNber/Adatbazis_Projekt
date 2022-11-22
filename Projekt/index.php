@@ -176,23 +176,99 @@
         <div id="main">
 			<div class="kartya">
 				<img src="img/unnamed.jpg" class="thumbnail">
-				<div>
-					<img src="img/new-user/simpsons.jpg" class="profpic-small">
-					<div class="seller-name">Vincs Eszter</div>
-				</div>
-				<div class="kartya-cim">Csinálok neked reggelit</div>
-				<div class="statistics">
-					<div class="bal">
-						<img src="img/star.svg" class="csillag">
-						<div class="ertekeles">5.0</div>
-						<div class="db-vasarlo">(125)</div>
+				<div class="product-information">
+					<div class="name-and-pic">
+						<img src="img/new-user/simpsons.jpg">
+						<div class="seller-name">Vincs Eszter</div>
 					</div>
-					<div class="jobb">
-						<div class="legkisebb">Starting at</div>
-						<div class="legkisebb-ar">$10</div>
-					</div>
+					<div class="kartya-cim">Csinálok neked reggelit</div>
 				</div>
+				<hr class="line">
+					<div class="statistics">
+						<div class="bal">
+							<img src="img/star.svg" class="csillag">
+							<div class="ertekeles">5.0</div>
+							<div class="db-vasarlo">(125)</div>
+						</div>
+						<div class="jobb">
+							<div class="legkisebb">Starting at</div>
+							<div class="legkisebb-ar">$10</div>
+						</div>
+					</div>
 			</div>
+			<div class="kartya">
+				<img src="img/unnamed.jpg" class="thumbnail">
+				<div class="product-information">
+					<div class="name-and-pic">
+						<img src="img/new-user/simpsons.jpg">
+						<div class="seller-name">Vincs Eszter</div>
+					</div>
+					<div class="kartya-cim">Csinálok neked reggelit</div>
+				</div>
+				<hr class="line">
+					<div class="statistics">
+						<div class="bal">
+							<img src="img/star.svg" class="csillag">
+							<div class="ertekeles">5.0</div>
+							<div class="db-vasarlo">(125)</div>
+						</div>
+						<div class="jobb">
+							<div class="legkisebb">Starting at</div>
+							<div class="legkisebb-ar">$10</div>
+						</div>
+					</div>
+			</div>
+			<div class="kartya">
+				<img src="img/unnamed.jpg" class="thumbnail">
+				<div class="product-information">
+					<div class="name-and-pic">
+						<img src="img/new-user/simpsons.jpg">
+						<div class="seller-name">Vincs Eszter</div>
+					</div>
+					<div class="kartya-cim">Csinálok neked reggelit</div>
+				</div>
+				<hr class="line">
+					<div class="statistics">
+						<div class="bal">
+							<img src="img/star.svg" class="csillag">
+							<div class="ertekeles">5.0</div>
+							<div class="db-vasarlo">(125)</div>
+						</div>
+						<div class="jobb">
+							<div class="legkisebb">Starting at</div>
+							<div class="legkisebb-ar">$10</div>
+						</div>
+					</div>
+			</div>
+			<div class="kartya">
+				<img src="img/unnamed.jpg" class="thumbnail">
+				<div class="product-information">
+					<div class="name-and-pic">
+						<img src="img/new-user/simpsons.jpg">
+						<div class="seller-name">Vincs Eszter</div>
+					</div>
+					<div class="kartya-cim">Csinálok neked reggelit</div>
+				</div>
+				<hr class="line">
+					<div class="statistics">
+						<div class="bal">
+							<img src="img/star.svg" class="csillag">
+							<div class="ertekeles">5.0</div>
+							<div class="db-vasarlo">(125)</div>
+						</div>
+						<div class="jobb">
+							<div class="legkisebb">Starting at</div>
+							<div class="legkisebb-ar">$10</div>
+						</div>
+					</div>
+			</div>
+
+
+
+
+
+
+			
 		</div>
         <div id="side-content"></div>
 	</main>

@@ -1,4 +1,20 @@
 /* Alap */
+@font-face {
+    font-family: "snafu";
+    src: url('../etc/major_shift-webfont.woff') format('woff'),
+         url('../etc/major_shift-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "nimbus";
+    src: url('../etc/NimbusSanL-Reg-webfont.woff') format('woff'),
+         url('../etc/NimbusSanL-Reg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,25 +22,26 @@
 }
 
 :root {
-	--ff-logo: ;
-	--ff-logo-mobile: ;
-	--ff-body: 'Poppins', sans-serif;
+	--ff-logo: "snafu";
+	--ff-body: "nimbus", 'Poppins', sans-serif;
+	--ff-test1: "Poppins";
+	--ff-test2: ;
 
-	--clr-input: white;
+	--crt-background: white;
 	--clr-nav: white;
-	--clr-logo: black;
-	--clr-button: white;
-	--clr-button-hover: #00131a;
-	--clr-button-text: black;
-	--clr-button-text-hover: white;
 	--crt-main: white;
-	--crl-form: rgb(175, 175, 175);
+	--crt-darker: white;
+	--crt-lighter: white;
+	--crt-special-first: white;
+	--crt-special-second: white;
+	--crt-special-third: white;
 
 }
 
 body {
 	background-color: WhiteSmoke;
     font-family: var(--ff-body);
+	color: var(--clr-logo);
 }
 
 
@@ -47,7 +64,7 @@ nav #logo-container {
 nav #logo-container .logo {
 	font-size: 2.5rem;
 	/*font-family:'Times New Roman', Times, serif;*/
-	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: var(--ff-logo);
 	letter-spacing: -0.1rem;
 	color: var(--clr-logo);
 	
